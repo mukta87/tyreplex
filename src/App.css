@@ -1,0 +1,478 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+/* common css */
+body {
+  font-family: "Inter", sans-serif;
+  box-sizing: border-box;
+  color: #444;
+}
+a {
+  text-decoration: none;
+  color: #444;
+}
+.card {
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 15px;
+  border-color: transparent;
+}
+.btn {
+  font-size: 14px;
+  font-weight: 500;
+  padding: 10px 15px;
+  border-radius: 8px;
+}
+.heading {
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+.heading em {
+  font-weight: 400;
+}
+.btn-primary {
+  background-color: #ed1c24;
+  border-color: #ed1c24;
+}
+.btn-outline-primary {
+  color: #ed1c24;
+  border-color: #ed1c24;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+  background-color: #ce050b !important;
+  border-color: #ce050b !important;
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:active,
+.btn-outline-primary:focus {
+  background-color: #ed1c24 !important;
+  border-color: #ed1c24 !important;
+}
+
+/* navbar */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 5px 20px #00000013;
+  position: fixed;
+  z-index: 111;
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 13px 0;
+}
+.navbar .nav-link {
+  color: #444;
+  font-size: 15px;
+  font-weight: 500;
+  padding: 10px 15px !important;
+}
+
+/* dealer information */
+.dealer-info {
+  margin-top: 90px;
+}
+.dealer-info .dealer-name {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.dealer-info .dealer-name h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0;
+}
+.verified {
+  display: flex;
+  font-size: 14px;
+  gap: 3px;
+  color: #4ca72c;
+}
+
+.dealer-info .dealer-reviews {
+  display: flex;
+  gap: 10px;
+  font-size: 14px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.rating-no {
+  background-color: #4ca72c;
+  color: #fff;
+  padding: 2px 7px;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.rating-no i {
+  font-size: 8px;
+}
+.dealer-info .rating-stars {
+  display: flex;
+  gap: 3px;
+  color: #ffc72d;
+}
+.dealer-info .total-reviews {
+  font-weight: 500;
+}
+.dealer-info .rate-us {
+  padding: 3px 7px;
+  border: 1px solid #ccc;
+  font-size: 12px;
+}
+.dealer-info .location-time {
+  font-size: 14px;
+}
+.dealer-info .location-time > div {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 8px;
+  align-items: flex-start;
+  color: #444444e1;
+}
+.dealer-info .location-time > div .bi {
+  font-size: 18px;
+}
+.dealer-info .get-direction {
+  padding: 12px;
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  width: 100%;
+}
+
+/* customer reviews */
+.customer-reviews {
+  padding: 60px 0 40px;
+}
+.customer-reviews .testimonials-card {
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.customer-reviews .review-text {
+  font-weight: 500;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+  min-height: 96px;
+}
+.customer-reviews .testimonials-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.customer-reviews .user-details {
+  display: flex;
+  gap: 5px;
+  font-weight: 500;
+  align-items: center;
+}
+.customer-reviews .user-details img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.customer-reviews .user-details span {
+  font-size: 14px;
+  color: #727272;
+}
+
+/* Deals in */
+.deals-in {
+  padding: 60px 0;
+  background-color: #f8f8f8;
+}
+
+.deals-in .deals-in-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 15px;
+  gap: 5px;
+  font-weight: 600;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+  font-size: 14px;
+  color: #444;
+  text-decoration: none;
+}
+.deals-in .deals-in-box img {
+  max-width: 150px;
+  transition: 0.2s linear;
+}
+.deals-in .deals-in-box:hover img {
+  scale: 1.1;
+}
+.deals-in .swiper {
+  margin: 0 -20px !important;
+  padding: 20px !important;
+  overflow: hidden !important;
+  overflow-y: visible !important;
+}
+.deals-in .swiper-button-prev {
+  left: auto;
+  right: 80px;
+}
+.deals-in .swiper-button-next {
+  right: 20px;
+}
+.deals-in .swiper-button-prev,
+.deals-in .swiper-button-next {
+  background-color: #ce050b;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  top: -40px;
+}
+.deals-in .swiper-button-prev::after,
+.deals-in .swiper-button-next::after {
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Services offered */
+.services-offered {
+  padding: 60px 0;
+}
+.services-offered .card-text {
+  font-size: 14px;
+  color: #727272;
+  line-height: 1.45;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+.services-offered .card-title {
+  font-weight: 600;
+}
+.services-offered .card {
+  padding: 10px;
+  border-radius: 10px;
+}
+.services-offered .card .card-body {
+  padding: 10px 0 0 0;
+}
+
+.services-offered .card .card-img-top {
+  border-radius: 6px 6px 0 0;
+}
+
+/* Tyres sold by this Dealer */
+.services-tyre {
+  padding: 0 0 60px 0;
+}
+.services-tyre .card {
+  padding: 10px;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  font-size: 14px;
+  border: 1px solid #e4e4e4;
+}
+.services-tyre .warranty-tag {
+  display: flex;
+  background-color: rgba(255, 202, 40, 0.27);
+  height: 21px;
+  color: #130f26;
+  align-items: center;
+  margin-left: auto;
+  border-radius: 3px;
+  padding: 3px 5px;
+  font-size: 12px;
+  position: absolute;
+  right: 10px;
+  font-weight: 600;
+}
+
+.services-tyre .brand-img img {
+  width: 70px;
+  max-width: 70px;
+}
+.services-tyre .bg-img {
+  bottom: -33px;
+  width: 200px;
+  right: -70px;
+  z-index: 9;
+  position: absolute;
+}
+.services-tyre .m-name {
+  font-size: 14px;
+  margin-top: 5px;
+  font-weight: 600;
+}
+.services-tyre .v-name {
+  margin-top: 5px;
+}
+
+.services-tyre .offer-text {
+  color: #4ca72c;
+  margin: 7px 0;
+}
+.services-tyre .product-feature {
+  font-size: 12px;
+}
+
+/* Payment mode */
+.pay-option {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.pay-option li {
+  flex: 1;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+  width: 20%;
+  word-break: break-all;
+  border: 1px solid #eee;
+  box-shadow: 0 5px 20px #00000013;
+}
+
+/* Have a question about Tyres */
+.have-a-question {
+  padding: 60px 0;
+}
+.have-a-question .card {
+  background-color: #ffeaaa;
+  background-image: url(https://sanskriti.online/assets/frontend/default/img/circle-png.png);
+  min-height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 60%;
+  background-attachment: fixed;
+  padding: 50px;
+  align-items: center;
+  justify-content: center;
+}
+.form-control {
+  height: 50px;
+  box-shadow: none !important;
+  padding: 7px 15px;
+  border-radius: 8px;
+}
+.form-control:focus {
+  border-color: #ffca28;
+}
+.have-a-question .card .form-control {
+  width: 400px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #48474c;
+  padding: 40px 0;
+  font-size: 14px;
+}
+.footer-links ul {
+  padding: 0;
+  list-style: none;
+  margin: 0;
+}
+.footer-links ul li a {
+  color: #ffffffd8;
+  padding: 4px 0;
+  display: block;
+}
+.footer .social-icons {
+  display: flex;
+  gap: 5px;
+  margin-top: 10px;
+}
+.footer .social-icons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 40px;
+  width: 40px;
+  font-size: 20px;
+  color: #fff;
+}
+.copyright {
+  font-size: 14px;
+}
+
+/* media query */
+
+@media (min-width: 1200px) {
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container {
+    max-width: 1200px;
+  }
+}
+@media(max-width:992px){
+  .navbar-toggler{
+    border: 0;
+    padding: 0;
+    box-shadow: none !important;
+  }
+  .btn-close{
+    opacity: 1;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .testimonials-row {
+    flex-wrap: nowrap;
+    overflow: auto;
+  }
+  .deals-in {
+    padding: 40px 0;
+    overflow: hidden;
+  }
+  .deals-in .deals-in-box img {
+    max-width: 140px;
+  }
+  .services-tyre .card{
+    margin-bottom: 20px;
+  }
+  .pay-option li{
+    width: 33%;
+    flex: auto;
+  }
+  .have-a-question .card{
+    padding: 20px;
+    background-size: 100%;
+  }
+  .have-a-question .card form{
+    width: 100%;
+  }
+  .have-a-question .card .form-control{
+    width: 100%;
+  }
+  .footer{
+    padding-bottom: 20px;
+  }
+  .footer .social-icons{
+    margin-bottom: 20px;
+  }
+  .footer-links ul{
+    margin-bottom: 20px;
+  }
+}
